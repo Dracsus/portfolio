@@ -44,7 +44,7 @@
 <main class="container">
   <h1>Contact</h1>
 
-  <form name="contact" method="POST" data-netlify="true" action="/contact.html">
+  <form name="contact" method="POST" data-netlify="true" netlify>
 
     <input type="hidden" name="form-name" value="contact">
 
@@ -76,5 +76,10 @@
 <footer class="bg-transparent text-center p-3 mt-4">
   © 2026 Thomas Zhu
 </footer>
+
+<form name="contact" method="POST" data-netlify="true" hidden>
+  <input type="text" name="name">
+</form>
+
 </body>
 </html>
