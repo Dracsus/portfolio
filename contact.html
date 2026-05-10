@@ -45,34 +45,32 @@
 <main class="container">
   <h1>Contact</h1>
 
-  <form class="row mt-4">
+  <form name="contact" method="POST" data-netlify="true">
+
+    <input type="hidden" name="form-name" value="contact">
 
     <div class="row mb-3">
       <div class="col-12 col-md-4">
         <label class="form-label">Naam</label>
-        <input type="text" class="form-control">
+        <input type="text" name="name" class="form-control" required>
       </div>
     </div>
 
     <div class="row mb-3">
       <div class="col-12 col-md-4">
         <label class="form-label">E-mail</label>
-        <input type="email" class="form-control">
+        <input type="email" name="email" class="form-control" required>
       </div>
     </div>
 
     <div class="row mb-3">
       <div class="col-12 col-md-8">
         <label class="form-label">Bericht</label>
-        <textarea class="form-control" rows="4"></textarea>
+        <textarea name="message" class="form-control" rows="4" required></textarea>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary">Verzenden</button>
-      </div>
-    </div>
+    <button type="submit" class="btn btn-primary">Verzenden</button>
 
   </form>
 </main>
